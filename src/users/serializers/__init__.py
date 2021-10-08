@@ -1,8 +1,3 @@
-from .auth import (
-    RegisterSerializer, ChangePasswordSerializer
-)
-
-from .user import (
-    UserDetailSerializer,
-    # TravellerListSerializer, TravellerBasicSerializer,
-)
+from .auth import ChangePasswordSerializer, RegisterSerializer
+from .user import \
+    UserDetailSerializer  # TravellerListSerializer, TravellerBasicSerializer,

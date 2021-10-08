@@ -1,15 +1,16 @@
+import logging
+
 from django.contrib.auth import logout
 from django.contrib.auth.models import User
-from rest_framework import generics
-from rest_framework import permissions, status
+from rest_framework import generics, permissions, status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.tokens import RefreshToken
-from users.serializers import RegisterSerializer, ChangePasswordSerializer
 
-import logging
+from users.serializers import ChangePasswordSerializer, RegisterSerializer
+
 logger = logging.getLogger('django_template')
 
 

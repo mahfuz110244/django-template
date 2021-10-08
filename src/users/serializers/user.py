@@ -1,7 +1,8 @@
 import datetime
-from dateutil import tz, parser
+
+from dateutil import parser, tz
+from django.contrib.auth.models import AbstractBaseUser, User, UserManager
 from rest_framework import serializers
-from django.contrib.auth.models import AbstractBaseUser, UserManager, User
 
 
 class UserDetailSerializer(serializers.ModelSerializer):

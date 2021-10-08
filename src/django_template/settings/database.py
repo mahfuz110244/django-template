@@ -1,4 +1,5 @@
-from django_template.settings import DB_NAME, DB_USER, DB_PASS, DB_HOST, DB_PORT
+from django_template.settings import (DB_HOST, DB_NAME, DB_PASS, DB_PORT,
+                                      DB_USER)
 
 DATABASES = {
     'default': {

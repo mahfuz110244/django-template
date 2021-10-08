@@ -1,8 +1,2 @@
-from .auth import (
-    RegisterView, LogoutView, ChangePasswordView
-)
-
-from .user import (
-    UserDetailsView,
-    # UserCoTravellersView,
-)
+from .auth import ChangePasswordView, LogoutView, RegisterView
+from .user import UserDetailsView  # UserCoTravellersView,

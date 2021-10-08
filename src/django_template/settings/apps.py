@@ -1,5 +1,6 @@
 import datetime
-from django_template.settings import DEBUG
+
+from .base import DEBUG
 
 DJANGO_APPS = [
     'django.contrib.admin',
